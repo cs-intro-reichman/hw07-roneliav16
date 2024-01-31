@@ -56,6 +56,7 @@ public class SpellChecker {
 			if (editDistance <= threshold) {
 				if (editDistance < minEditDistance) {
 					mostSimilarWord = wordFromDictionary;
+					minEditDistance = editDistance;
 				}
 			}
 		}
